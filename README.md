@@ -39,6 +39,7 @@ There are several ways to start using Laverna:
 2. Use a desktop app.
 3. Use a prebuilt version from [Laverna/static-laverna][9] repository.
 4. Build it from the source code.
+5. Run a Docker container
 
 ### Desktop app installation
 ---------------
@@ -137,6 +138,20 @@ codesign -s - -f ./laverna.app/Contents/Frameworks/Mantle.framework
 codesign -s - -f ./laverna.app/Contents/Frameworks/ReactiveCocoa.framework 
 codesign -s - -f ./laverna.app/Contents/Frameworks/Squirrel.framework 
 codesign --verify -vv ./laverna.app
+```
+
+### Run a Docker container
+
+#### Using docker run
+
+```
+docker run --rm -ti -p 8080:80 olegfiksel/laverna
+```
+
+#### Using docker-compose
+
+```
+docker-compose up -d
 ```
 
 ## Do you have questions?
