@@ -1,5 +1,4 @@
 FROM node:8.11.3 AS build
-#ARG VERSION=0.7.51
 
 WORKDIR /home/node
 COPY . /home/node/laverna
